@@ -4,6 +4,10 @@ import {
   SparklineTooltip,
 } from "@syncfusion/ej2-react-charts";
 const SparkLine = ({ id, height, width, color, data, type, currentColor }) => {
+  if (!data || data.length === 0) {
+    return <p>No data available</p>; // Fallback UI
+  }
+
   return (
     <SparklineComponent
       id={id}
@@ -16,7 +20,8 @@ const SparkLine = ({ id, height, width, color, data, type, currentColor }) => {
       dataSource={data}
       xName="x"
       yName="y"
-      type={data}
+      type={type}
+      markerSettings={{ visible: ["All"], size: 2.5, fill: currentColor }}
       tooltipSettings={{
         visible: true,
         format: "${x} : data ${y}",
