@@ -4,7 +4,7 @@ import { FiSettings } from "react-icons/fi";
 import { TooltipComponent } from "@syncfusion/ej2-react-popups";
 import { useStateContext } from "./contexts/ContextProvider";
 
-import { Navbar, Footer, Sidebar, ThemeSettings } from "./components";
+import { Navbar, Sidebar, ThemeSettings } from "./components";
 import {
   Ecommerce,
   Orders,
@@ -32,7 +32,6 @@ const App = () => {
     currentMode,
     currentColor,
   } = useStateContext();
-  console.log();
   return (
     <div className={currentMode === "Dark" ? "dark" : ""}>
       <BrowserRouter>
