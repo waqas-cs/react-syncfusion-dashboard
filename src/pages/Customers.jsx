@@ -7,7 +7,6 @@ import {
   Edit,
   Sort,
   Filter,
-  Search,
   Inject,
   Toolbar,
 } from "@syncfusion/ej2-react-grids";

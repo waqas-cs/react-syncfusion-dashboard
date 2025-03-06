@@ -5,7 +5,6 @@ import {
   Inject,
   DateTime,
   Legend,
-  Tooltip,
   SplineAreaSeries,
 } from "@syncfusion/ej2-react-charts";
 import { Header } from "../../components";

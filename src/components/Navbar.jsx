@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { AiOutlineMenu } from "react-icons/ai";
 import { FiShoppingCart } from "react-icons/fi";
 import { BsChatLeft } from "react-icons/bs";
@@ -28,10 +28,8 @@ const NavButton = ({ title, customFunc, icon, color, dotColor }) => (
 
 const Navbar = () => {
   const {
-    activeMenu,
     setActiveMenu,
     isClicked,
-    setIsClicked,
     handleClick,
     screenSize,
     setScreenSize,
